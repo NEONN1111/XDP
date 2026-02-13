@@ -13,7 +13,7 @@ import java.util.List;
 // this version taken from SWP
 public class XDP_BlockedHullmodDisplayScript extends BaseEveryFrameCombatPlugin implements EveryFrameScript {
 
-    private static final String NOTIFICATION_HULLMOD = "nsp_incompatible";
+    private static final String NOTIFICATION_HULLMOD = "xdp_incompatible";
     private static final String NOTIFICATION_SOUND = "cr_allied_critical";
     private static ShipAPI ship;
 

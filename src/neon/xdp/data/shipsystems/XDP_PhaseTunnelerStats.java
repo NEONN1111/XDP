@@ -24,7 +24,7 @@ import java.util.Map;
 
 
 
-public class XDP_PhaseTunnelerStats extends BaseShipSystemScript {
+public class xdp_PhaseTunnelerStats extends BaseShipSystemScript {
 
     private static final String CHARGEUP_SOUND = "xdp_phasetunneleractivate";
     private static final float DAMAGE_MOD_VS_CAPITAL = 0.2f;

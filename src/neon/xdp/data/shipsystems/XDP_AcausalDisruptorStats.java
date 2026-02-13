@@ -18,7 +18,7 @@ import com.fs.starfarer.api.input.InputEventAPI;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 
-public class XDP_AcausalDisruptorStats extends BaseShipSystemScript {
+public class xdp_AcausalDisruptorStats extends BaseShipSystemScript {
 	//public static final float ENERGY_DAM_PENALTY_MULT = 0.5f;
 	public static float ENERGY_DAM_PENALTY_MULT = 1f;
 	

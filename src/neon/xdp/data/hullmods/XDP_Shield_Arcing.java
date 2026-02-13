@@ -26,13 +26,13 @@ public class XDP_Shield_Arcing extends BaseHullMod {
         //time between arcs first min second max
         IntervalUtil timer = new IntervalUtil(1.5f, 1.5f);
 
-        if (customCombatData.get("NSP_Shield_Arcing" + id) instanceof IntervalUtil)
-            timer = (IntervalUtil) customCombatData.get("NSP_Shield_Arcing" + id);
+        if (customCombatData.get("XDP_Shield_Arcing" + id) instanceof IntervalUtil)
+            timer = (IntervalUtil) customCombatData.get("XDP_Shield_Arcing" + id);
 
         if (ship.getShield().isOff()) return;
 
         timer.advance(amount);
-        customCombatData.put("NSP_Shield_Arcing" + id, timer);
+        customCombatData.put("XDP_Shield_Arcing" + id, timer);
         if (timer.intervalElapsed()){
             if (ship.getShield().getActiveArc() < minAngle) return;
 

@@ -15,7 +15,7 @@ import java.util.List;
 import org.lazywizard.lazylib.FastTrig;
 import org.lwjgl.util.vector.Vector2f;
 
-public class XDP_SymbiantSystem extends BaseShipSystemScript {
+public class xdp_SymbiantSystem extends BaseShipSystemScript {
     public static final float DAMAGE_BONUS_PERCENT = 1.5F;
 
     public static final float DISSIPATION_MULT = 1.5F;

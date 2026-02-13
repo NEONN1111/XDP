@@ -6,18 +6,18 @@ package neon.xdp.data.scripts.campaign.ids;
 
 public class XDP_IDs {
 
-	public static final String NSP = "NSP";
+	public static final String XDP = "XDP";
 
-	public static final String INVICTA_CORE = "nsp_invicta_core";
+	public static final String INVICTA_CORE = "xdp_invicta_core";
 
 
-	public static final String MEM_DAYS_WITH_INVICTA = "$nsp_timeWithInvicta";
-	public static final String MEM_NUM_INVICTA_THOUGHTS = "$nsp_numInvictaThoughts"; // only random ones
-	public static final String MEM_INVICTA_LEFT = "$nsp_InvictaLeft";
-	public static final String MEM_INVICTA_ABANDON_MARKET = "$nsp_InvictaAbandonMarket";
+	public static final String MEM_DAYS_WITH_INVICTA = "$xdp_timeWithInvicta";
+	public static final String MEM_NUM_INVICTA_THOUGHTS = "$xdp_numInvictaThoughts"; // only random ones
+	public static final String MEM_INVICTA_LEFT = "$xdp_InvictaLeft";
+	public static final String MEM_INVICTA_ABANDON_MARKET = "$xdp_InvictaAbandonMarket";
 
-	public static final String GAMMA_CORE_NSP = "gamma_core_nsp";
-	public static final String BETA_CORE_NSP = "beta_core_nsp";
-	public static final String ALPHA_CORE_NSP = "alpha_core_nsp";
+	public static final String GAMMA_CORE_XDP = "gamma_core_xdp";
+	public static final String BETA_CORE_XDP = "beta_core_xdp";
+	public static final String ALPHA_CORE_XDP = "alpha_core_xdp";
 
 }

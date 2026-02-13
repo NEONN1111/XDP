@@ -11,32 +11,12 @@ Will target missiles if no other targets are in range.",,,,,7.4
 Adjutant Defense Cannon,xdp_adjutant,1,,100000,900,,1000,,,5,40,80,1,8,FRAGMENTATION,190,,0,0.333333,1,,0,5,1,5,,900,,,,,3,PD_ALSO,"no_drop, no_drop_salvage, restricted",,Domain Restricted,,Anti Armor (Area),,,,,"Each shell has a proximity fuse and deals damage over a wide area when it explodes.
 
 Will target missiles if no other targets are in range.",,,,,40.5
-Tyrfing Singularity Cannon,xdp_tyrfing,1,,100000,1200,,1000,700,,7,,,,,ENERGY,190,,0,0.5,1,,0,2,1,5,,1500,,,,,3,,"no_drop, no_drop_salvage, restricted",,Domain Restricted,,Anti Armor,,,,,Fires singularity shells.,,,,,40.5
 ,xdp_maneuveringjet,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
-,xdp_vambracecover1,,,,0,0,,,,45,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage, restricted",,,,,,,,,,,,,,
-,xdp_vambracecover2,,,,0,0,,,,45,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage, restricted",,,,,,,,,,,,,,
-,xdp_vambracecover3,,,,0,0,,,,45,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage, restricted",,,,,,,,,,,,,,
-,xdp_vambracecover4,,,,0,0,,,,45,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage, restricted",,,,,,,,,,,,,,
-,xdp_absdeco1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,xdp_absdeco2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-Eyes,xdp_nemetor_eyes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,44
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Angurvadal Assault Cannon,xdp_angurvadal,2,0.4,6000,900,,280,200,10,25,24,,,,ENERGY,275,,0.1,2,9,0.2,3,25,2,8,,900,,,75,,,"PD,PD_ALSO","energy18, he17, kinetic17, oddity, pd17, no_sell, no_dealer",,Unknown,,General,,,,,,,,,,7.5
-Neoferric Quadcoil,xdp_neoferric_quadcoil,0,,10000,900,,200,,10,30,20,,,,HIGH_EXPLOSIVE,200,,0,4.3,8,0.1,,,,,,900,,,,,,,"restricted, codex_unlockable, he17, xdp_ancient_bp",,Domain Restricted,,Anti Armor,,,,,,,,,,18.5
 ,xdp_luminance_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
 Mass Annihilator,xdp_mass_annihilator,3,,12000,700,750,,100,0,720,40,,,,ENERGY,,300,0.75,1,,,,,,,99999,,,,,,,"SYSTEM, FIRE_WHEN_INEFFICIENT","energy20, beam20, no_drop, no_drop_salvage",,Domain Restricted,,Anti Armor,,,,,%s: Deals up to %s the longer the beam is kept on target.,Charged Beam|1000 EMP dps,,,,
 Castigation Missile Platform,xdp_castigation,0,,15000,2000,,1500,,30,10,30,,,,HIGH_EXPLOSIVE,0,,0,20,3,0.25,0,0,0,0,,700,40,22,350,,,STRIKE,"strike16, rocket14, no_sell, no_dealer, oddity",,Unknown,,Semi-guided Torpedo ,Very Fast,Special,,,,,,,TRUE,16.4
 Excommunication Missile Platform,xdp_excommunication,0,,10000,2000,,400,,20,10,15,,,,HIGH_EXPLOSIVE,0,,0,10,4,0.15,0,0,0,0,,700,40,22,350,,,STRIKE,"strike16, rocket14, no_sell, no_dealer, oddity",,Unknown,,Semi-guided Torpedo ,Very Fast,Special,,,,,,,TRUE,16.4
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-#EXPONENT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Microlauncher (R),xdp_exponent_launcher_right,1,,1200,2500,,125,100,15,0,0,,,,KINETIC,0,,0,4,15,0.02,0,0,0,,,700,90,13,100,,,"DO_NOT_AIM, SYSTEM, DO_NOT_CONSERVE","no_sell, no_dealer, restricted",,,,General,Very Fast,Medium,,,,,,,TRUE,12
-Microlauncher (L),xdp_exponent_launcher_left,1,,1200,2500,,125,100,15,0,0,,,,KINETIC,0,,0,4,15,0.02,0,0,0,,,700,90,13,100,,,"DO_NOT_AIM, SYSTEM, DO_NOT_CONSERVE","no_sell, no_dealer, restricted",,,,General,Very Fast,Medium,,,,,,,TRUE,12
-Elysium Lance,xdp_elysium_lance,1,,1200,600,,90,100,0,20,10,,,,ENERGY,80,,0.25,0,,,,,,,,1000,,,,,,,"energy13, no_sell, no_dealer, restricted",,Unknown,,General,,,,,,,,,,22
-Exponential Pulser,xdp_exponent_pulser,1,,4500,700,,100,100,0,20,30,30,2,,ENERGY,125,,0,0.2,,,,,,,,1000,,,,,,,"energy18, no_sell, no_dealer, restricted",,Unknown,,General,,,,,,,,,,25
-,xdp_exponent_deco1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,xdp_exponent_deco2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,xdp_exponent_deco3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,xdp_exponent_deco4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #SPORESHIP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Canister Cannon,xdp_restored_sporeship_canistercannon,1,,10000,900,,3000,,250,5,50,,,,HIGH_EXPLOSIVE,3500,,0,7,1,,3,3,0,1,,500,,,1000,1,,"SYSTEM,SHOW_IN_CODEX,GROUP_ALTERNATING",codex_unlockable,,Unique,,Long Range Support,,,,,Splits into %s submunitions that deal %s high explosive damage each.,20 | 200,,,,4364
@@ -62,19 +42,6 @@ FLUX DECO 1,xdp_flux_spin1,,,,,,,,,300,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,
 FLUX DECO 2,xdp_flux_spin2,,,,,,,,,400,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 FLUX DECO 3,xdp_flux_spin3,,,,,,,,,400,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-#CENT AUTO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Centurion (A) Cover,xdp_cent_cover,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,42.5
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-#TLL CORE BRIDGES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,tll_anubis_corebridge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,tll_peregrine_corebridge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,tll_conquest_corebridge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,tll_dominator_corebridge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,tll_eagle_corebridge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,tll_falcon_corebridge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,tll_onslaught_corebridge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
-,tll_legion_corebridge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #DECO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Pusher Plate (Small),xdp_pusherplate_small,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,pusherplate,,,,,,,,,,,,,,42.75

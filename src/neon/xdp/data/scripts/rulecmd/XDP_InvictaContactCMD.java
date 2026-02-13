@@ -11,7 +11,7 @@ import neon.xdp.data.campaign.intel.misc.XDPInvictaConvIntel;
 import java.util.List;
 import java.util.Map;
 
-public class XDP_InvictaContactCMD extends BaseCommandPlugin {
+public class xdp_InvictaContactCMD extends BaseCommandPlugin {
 
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
         TextPanelAPI text = dialog.getTextPanel();

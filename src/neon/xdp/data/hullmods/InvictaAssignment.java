@@ -25,7 +25,7 @@ public class InvictaAssignment extends BaseHullMod {
         // or can be something else, in which case we set the captain to invicta and set them as unremovable
         // when we create invicta, set them as unremovable to avoid issues with ai core duplication
         // the original SOTF hullmod works fine without this jank because sierra is (probably?) a person under the sector's important people and not an AI core
-        if (member.getCaptain() == null ||  member.getCaptain().isDefault() || (!member.getCaptain().getId().equals("nsp_invicta") && !member.getCaptain().isPlayer())){
+        if (member.getCaptain() == null ||  member.getCaptain().isDefault() || (!member.getCaptain().getId().equals("xdp_invicta") && !member.getCaptain().isPlayer())){
             PersonAPI invicta = Global.getSector().getImportantPeople().getPerson("xdp_invicta");
             if (invicta != null) {
                 member.setCaptain(invicta);
@@ -48,8 +48,8 @@ public class InvictaAssignment extends BaseHullMod {
         if (engine.isInCampaign() || engine.isInCampaignSim()) {
             // force Sierra as the captain, even if player is piloting
             //
-            if (ship.isAlive() && !ship.getCaptain().getId().equals("nsp_invicta_core")) {
-                PersonAPI invicta = Global.getSector().getImportantPeople().getPerson("nsp_invicta");
+            if (ship.isAlive() && !ship.getCaptain().getId().equals("xdp_invicta_core")) {
+                PersonAPI invicta = Global.getSector().getImportantPeople().getPerson("xdp_invicta");
                 if (invicta != null) {
                     ship.setCaptain(invicta);
                 }

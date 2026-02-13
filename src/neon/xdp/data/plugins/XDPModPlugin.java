@@ -76,12 +76,11 @@ public class XDPModPlugin extends BaseModPlugin {
             HAS_GRAPHICSLIB = true;
             ShaderLib.init();
             // LightData.readLightDataCSV((String) "data/config/example_lights_data.csv");
-            TextureData.readTextureDataCSV((String) "data/config/nsp_texture_data.csv");
-            log.info("NSP shaders active");
+            log.info("XDP shaders active");
         }
         hasMagicLib = Global.getSettings().getModManager().isModEnabled("MagicLib");
 
-        log.info("Welcome to NSP! I'm in your hulls...");
+        log.info("Welcome to XDP! I'm in your hulls...");
     }
 
     @Override

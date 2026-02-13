@@ -70,7 +70,7 @@ public class XDP_TargetingSupercomputer extends BaseHullMod {
 		for (String tmp : BLOCKED_HULLMODS) {
 			if (ship.getVariant().getHullMods().contains(tmp)) {
 				ship.getVariant().removeMod(tmp);
-				String ERROR = "nsp_incompatible";
+				String ERROR = "xdp_incompatible";
 				ship.getVariant().addMod(ERROR);
 			}
 		}

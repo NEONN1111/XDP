@@ -31,7 +31,7 @@ import org.magiclib.util.MagicCampaign;
 import java.awt.Color;
 import java.util.*;
 
-public class XDP_DerelictInteractions extends BaseCommandPlugin {
+public class xdp_DerelictInteractions extends BaseCommandPlugin {
 
     private static final float SUPPLIES_PER_NEXUS = 800f;
     private static final float METALS_PER_NEXUS = 1500f;

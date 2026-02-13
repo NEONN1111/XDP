@@ -10,27 +10,16 @@ import com.fs.starfarer.api.characters.SkillSpecAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipHullSpecAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
-import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin;
 import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
 import com.fs.starfarer.api.impl.campaign.ids.*;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner;
-import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
-import com.fs.starfarer.api.impl.hullmods.Automated;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
-import neon.xdp.data.plugins.XDP_InvictaCore;
 import neon.xdp.data.scripts.campaign.ids.XDP_IDs;
-import lunalib.lunaSettings.LunaSettings;
-import org.lazywizard.lazylib.combat.DefenseUtils;
-import second_in_command.SCUtils;
 
-import java.awt.*;
 import java.util.*;
 
 import static com.fs.starfarer.api.characters.MutableCharacterStatsAPI.SkillLevelAPI;
-import static com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator.*;
 
 public class XDP_Misc {
 
@@ -85,7 +74,7 @@ public class XDP_Misc {
 
     // returns the empty variant of Sierra's current ship class - Pledge or Vow
     public static String getSierraVariant() {
-        return Global.getSector().getMemoryWithoutUpdate().getString("$nsp_invicta_var") + "_Hull";
+        return Global.getSector().getMemoryWithoutUpdate().getString("$xdp_invicta_var") + "_Hull";
     }
 
 
@@ -115,15 +104,15 @@ public class XDP_Misc {
         if (person.getAICoreId() != null) {
             switch (person.getAICoreId()) {
                 case "gamma_core":
-                    person.setAICoreId(XDP_IDs.GAMMA_CORE_NSP);
+                    person.setAICoreId(XDP_IDs.GAMMA_CORE_XDP);
                     person.setRankId(Ranks.SPACE_LIEUTENANT); // Sliver
                     break;
                 case "beta_core":
-                    person.setAICoreId(XDP_IDs.BETA_CORE_NSP);
+                    person.setAICoreId(XDP_IDs.BETA_CORE_XDP);
                     person.setRankId(Ranks.SPACE_CAPTAIN); // Echo
                     break;
                 case "alpha_core":
-                    person.setAICoreId(XDP_IDs.ALPHA_CORE_NSP);
+                    person.setAICoreId(XDP_IDs.ALPHA_CORE_XDP);
                     person.setRankId(Ranks.SPACE_COMMANDER); // Annex
                     break;
             }
@@ -174,8 +163,8 @@ public class XDP_Misc {
         if (suffix == null) {
             suffix = temp.getName().getLast();
         }
-        person.getMemoryWithoutUpdate().set("$nsp_prefix", prefix);
-        person.getMemoryWithoutUpdate().set("$nsp_suffix", suffix);
+        person.getMemoryWithoutUpdate().set("$xdp_prefix", prefix);
+        person.getMemoryWithoutUpdate().set("$xdp_suffix", suffix);
         person.getName().setFirst(prefix + "-" + infex + "-" + suffix); // e.g Index-Annex-Optimum
         person.getName().setLast("");
     }

@@ -82,7 +82,7 @@ public class XDP_LinkedHull extends BaseHullMod {
                 currLevel = 2f;
             }
         }
-        child.getMutableStats().getZeroFluxMinimumFluxLevel().modifyFlat("swp_linkedhull", currLevel);
+        child.getMutableStats().getZeroFluxMinimumFluxLevel().modifyFlat("xdp_linkedhull", currLevel);
 
         /* Mirror parent's fighter commands */
         if (child.hasLaunchBays()) {
@@ -172,7 +172,7 @@ public class XDP_LinkedHull extends BaseHullMod {
             int originalEngines;
             switch (parent.getHullSpec().getBaseHullId()) {
                 default:
-                case "nsp_restored_sporeship":
+                case "xdp_restored_sporeship":
                     originalMass = 14700f;
                     originalEngines = 21;
                     break;
@@ -198,12 +198,12 @@ public class XDP_LinkedHull extends BaseHullMod {
 
             float thrust = workingEngines * thrustPerEngine;
             float enginePerformance = thrust / Math.max(1f, parent.getMassWithModules());
-            parent.getMutableStats().getAcceleration().modifyMult("nsp_linkedhull", enginePerformance);
-            parent.getMutableStats().getDeceleration().modifyMult("nsp_linkedhull", enginePerformance);
-            parent.getMutableStats().getTurnAcceleration().modifyMult("nsp_linkedhull", enginePerformance);
-            parent.getMutableStats().getMaxTurnRate().modifyMult("nsp_linkedhull", enginePerformance);
-            parent.getMutableStats().getMaxSpeed().modifyMult("nsp_linkedhull", enginePerformance);
-            parent.getMutableStats().getZeroFluxSpeedBoost().modifyMult("nsp_linkedhull", enginePerformance);
+            parent.getMutableStats().getAcceleration().modifyMult("xdp_linkedhull", enginePerformance);
+            parent.getMutableStats().getDeceleration().modifyMult("xdp_linkedhull", enginePerformance);
+            parent.getMutableStats().getTurnAcceleration().modifyMult("xdp_linkedhull", enginePerformance);
+            parent.getMutableStats().getMaxTurnRate().modifyMult("xdp_linkedhull", enginePerformance);
+            parent.getMutableStats().getMaxSpeed().modifyMult("xdp_linkedhull", enginePerformance);
+            parent.getMutableStats().getZeroFluxSpeedBoost().modifyMult("xdp_linkedhull", enginePerformance);
         }
 
         float desiredRadius = 315f;
@@ -224,9 +224,9 @@ public class XDP_LinkedHull extends BaseHullMod {
             }
 
             if (totalModuleCap > 0f) {
-                parent.getMutableStats().getZeroFluxSpeedBoost().modifyMult("nsp_linkedhull2", 1f - (moduleCapOverThreshold / totalModuleCap));
+                parent.getMutableStats().getZeroFluxSpeedBoost().modifyMult("xdp_linkedhull2", 1f - (moduleCapOverThreshold / totalModuleCap));
             } else {
-                parent.getMutableStats().getZeroFluxSpeedBoost().unmodify("nsp_linkedhull2");
+                parent.getMutableStats().getZeroFluxSpeedBoost().unmodify("xdp_linkedhull2");
             }
 
             if (Math.abs(parent.getCollisionRadius() - desiredRadius) >= 1f) {

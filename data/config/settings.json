@@ -30,7 +30,6 @@
 
 		"characters":{
 			"Invicta":"graphics/portraits/characters/Invicta.png",
-			"The Exponent":"graphics/portraits/characters/exponent_core.png",
 		},
         "fx":{
 			"xdp_Flare":"graphics/fx/xdp_FX/xdp_FlareA.png",

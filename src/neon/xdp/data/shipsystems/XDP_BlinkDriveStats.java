@@ -11,7 +11,7 @@ import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.entities.SimpleEntity;
 import org.lwjgl.util.vector.Vector2f;
 
-public class XDP_BlinkDriveStats extends BaseShipSystemScript {
+public class xdp_BlinkDriveStats extends BaseShipSystemScript {
 
     private static final Color COLOR1 = new Color(255, 255, 255);
     private static final Color COLOR2 = new Color(150, 50, 200);

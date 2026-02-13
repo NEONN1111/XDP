@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class XDP_FlareSubsystem extends MagicSubsystem {
+public class xdp_FlareSubsystem extends MagicSubsystem {
 
     private IntervalUtil flareInterval = new IntervalUtil(0.02f, 0.05f);
     private int flaresToLaunch = 15;
@@ -27,7 +27,7 @@ public class XDP_FlareSubsystem extends MagicSubsystem {
     private static final float DISRUPTION_RADIUS = 400f; //
     private FlareManagerPlugin flareManager;
 
-    public XDP_FlareSubsystem(ShipAPI ship) {
+    public xdp_FlareSubsystem(ShipAPI ship) {
         super(ship);
         findFlareLaunchPositions();
     }

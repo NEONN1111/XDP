@@ -16,7 +16,7 @@ public class XDP_MessengerAmbient extends BaseHullMod {
             return;
         }
 
-        Global.getSoundPlayer().playLoop("nsp_messenger_ambience", loop1, 1f, 0.3f, ship.getLocation(), Misc.ZERO);
+        Global.getSoundPlayer().playLoop("xdp_messenger_ambience", loop1, 1f, 0.3f, ship.getLocation(), Misc.ZERO);
 
         float vol;
         if (ship.getSystem().isActive()) {
@@ -24,6 +24,6 @@ public class XDP_MessengerAmbient extends BaseHullMod {
         } else {
             vol = 0.01f;
         }
-        Global.getSoundPlayer().playLoop("nsp_messenger_ambience", loop2, 1f, 0.3f, ship.getLocation(), Misc.ZERO);
+        Global.getSoundPlayer().playLoop("xdp_messenger_ambience", loop2, 1f, 0.3f, ship.getLocation(), Misc.ZERO);
     }
 }

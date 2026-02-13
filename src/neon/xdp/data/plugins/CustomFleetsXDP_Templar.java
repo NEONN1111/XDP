@@ -53,7 +53,6 @@ public class CustomFleetsXDP_Templar {
 		addMembersFromVariant(fleet, "xdp_derelominator_standard", 2);
 		addMembersFromVariant(fleet, "xdp_recluse_standard", 3);
 		addMembersFromVariant(fleet, "xdp_superderelict_standard", 1);
-		addMembersFromVariant(fleet, "xdp_superderelict_squall", 1);
 		addMembersFromVariant(fleet, "xdp_hermod_standard", 2);
 		addMembersFromVariant(fleet, "xdp_luminance_standard", 3);
 		addMembersFromVariant(fleet, "xdp_gleam_standard", 3);
@@ -102,7 +101,7 @@ public class CustomFleetsXDP_Templar {
 
 		// add fleet to a star system and set its location
 
-			SectorEntityToken planet = location.getEntityById("test_planet");
+			SectorEntityToken planet = location.getEntityById("test_planet_invicta");
 			location.addEntity(fleet);
 			if (planet != null){
 				fleet.setLocation(planet.getLocation().x, planet.getLocation().y - 500);

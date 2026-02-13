@@ -30,7 +30,7 @@ import com.fs.starfarer.api.util.Misc;
  *
  * Copyright 2022 Fractal Softworks, LLC
  */
-public class XDP_OrionChargeStats extends BaseShipSystemScript {
+public class xdp_OrionChargeStats extends BaseShipSystemScript {
 
 	public static class PusherPlateImpulse {
 		public float force;
@@ -121,7 +121,7 @@ public class XDP_OrionChargeStats extends BaseShipSystemScript {
 	protected OrionDeviceParams p = new OrionDeviceParams();
 	protected PusherPlateState pusherState = new PusherPlateState();
 
-	public XDP_OrionChargeStats() {
+	public xdp_OrionChargeStats() {
 		p = new OrionDeviceParams();
 		//p.recolorTowardsEngineColor = true;
 	}

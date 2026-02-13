@@ -14,7 +14,7 @@
   "builtInMods": [
     "automated",
     "delicate",
-    "swp_linkedhull",
+    "xdp_linkedhull",
     "xdp_supercomputer",
     "operations_center",
     "xdp_plasmajets",

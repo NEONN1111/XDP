@@ -9,7 +9,7 @@ import com.fs.starfarer.api.util.Misc;
 import java.util.List;
 import java.util.Map;
 
-public class XDP_isModEnabled extends BaseCommandPlugin {
+public class xdp_isModEnabled extends BaseCommandPlugin {
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
         String modID = params.get(0).getString(memoryMap);

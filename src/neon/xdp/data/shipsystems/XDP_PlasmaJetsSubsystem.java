@@ -9,7 +9,7 @@ import org.magiclib.subsystems.MagicSubsystem;
 
 import java.awt.*;
 
-public class XDP_PlasmaJetsSubsystem extends MagicSubsystem {
+public class xdp_PlasmaJetsSubsystem extends MagicSubsystem {
 
     private static final float SPEED_BONUS = 90f;
     private static final float ACC_BONUS = 125f;
@@ -49,7 +49,7 @@ public class XDP_PlasmaJetsSubsystem extends MagicSubsystem {
     private String loopSoundId = null;
     private boolean soundStarted = false;
 
-    public XDP_PlasmaJetsSubsystem(ShipAPI ship) {
+    public xdp_PlasmaJetsSubsystem(ShipAPI ship) {
         super(ship);
     }
 

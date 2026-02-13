@@ -11,7 +11,7 @@ import org.lwjgl.util.vector.Vector2f;
 import java.util.List;
 import java.util.Map;
 
-public class XDP_PlaySound extends BaseCommandPlugin {
+public class xdp_PlaySound extends BaseCommandPlugin {
 
     protected SectorEntityToken entity;
 

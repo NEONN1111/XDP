@@ -21,7 +21,7 @@ public class XDP_aiswitch_penalty extends BaseHullMod {
         if (variant == null) return;
         
         // can't use variant.spec because we change the spec itself to remove UNBOARDABLE
-        if (!variant.hasHullMod("NSP_aiswitch")) {
+        if (!variant.hasHullMod("XDP_aiswitch")) {
           ShipHullSpecAPI spec = Global.getSettings().getHullSpec(variant.getHullSpec().getRestoredToHullId());
             variant.removeMod(this.getSpec().getId());
             

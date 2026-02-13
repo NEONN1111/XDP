@@ -10,7 +10,7 @@ import neon.xdp.data.scripts.XDP_People;
 import java.util.List;
 import java.util.Map;
 
-public class XDP_addPersonToComms extends BaseCommandPlugin {
+public class xdp_addPersonToComms extends BaseCommandPlugin {
     // adds person to market comm directory of player fleet interaction target
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {

@@ -12,7 +12,7 @@
   "shieldRadius": 201.5,
   "viewOffset": 0,
   "builtInMods": [
-    "swp_linkedhull",
+    "xdp_linkedhull",
     "automated",
     "supercomputer",
     "always_detaches",

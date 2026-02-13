@@ -78,7 +78,7 @@ public class XDPInvictaConvIntel extends BaseIntelPlugin {
 		if (invicta == null) {
 			try {
 				com.fs.starfarer.api.characters.ImportantPeopleAPI.PersonDataAPI data =
-						Global.getSector().getImportantPeople().getData("nsp_invicta_core");
+						Global.getSector().getImportantPeople().getData("xdp_invicta_core");
 				if (data != null) {
 					invicta = data.getPerson();
 				}
@@ -265,7 +265,7 @@ public class XDPInvictaConvIntel extends BaseIntelPlugin {
 
 		info.addImage(invicta.getPortraitSprite(), width, 128, opad);
 		info.addPara("Invicta is currently available to speak to.", opad);
-		ButtonAPI button = info.addButton("Request a comm-link", "nsp_InvictaConvButton",
+		ButtonAPI button = info.addButton("Request a comm-link", "xdp_InvictaConvButton",
 			//	invicta_faction.getBaseUIColor(), invicta_faction.getDarkUIColor(),
 				(int)(width), 20f, opad * 2f);
 		button.setShortcut(Keyboard.KEY_T, true);

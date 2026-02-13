@@ -2,7 +2,7 @@ package neon.xdp.data.hullmods;
 
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.ShipAPI;
-import neon.xdp.data.shipsystems.XDP_FlareSubsystem;
+import neon.xdp.data.shipsystems.xdp_FlareSubsystem;
 import org.magiclib.subsystems.MagicSubsystemsManager;
 
 public class XDP_FlareLauncherHullmod extends BaseHullMod {
@@ -11,7 +11,7 @@ public class XDP_FlareLauncherHullmod extends BaseHullMod {
     public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
         super.applyEffectsAfterShipCreation(ship, id);
         if (ship != null) {
-            MagicSubsystemsManager.addSubsystemToShip(ship, new XDP_FlareSubsystem(ship));
+            MagicSubsystemsManager.addSubsystemToShip(ship, new xdp_FlareSubsystem(ship));
         }
     }
 

@@ -23,8 +23,8 @@ import org.magiclib.plugins.MagicTrailPlugin;
 
 public class XDP_Trails extends BaseEveryFrameCombatPlugin {
 
-    private static final String CANISTER_PROJECTILE_ID = "nsp_restored_sporeship_canistercannon_shot";
-    private static final String CANISTER_SUBMUNITION_PROJECTILE_ID = "nsp_sporeship_canister_sub_shot";
+    private static final String CANISTER_PROJECTILE_ID = "xdp_restored_sporeship_canistercannon_shot";
+    private static final String CANISTER_SUBMUNITION_PROJECTILE_ID = "xdp_sporeship_canister_sub_shot";
 
     private static final Color CANISTER_TRAIL_COLOR_START = new Color(255, 150, 100);
     private static final Color CANISTER_TRAIL_COLOR_END = new Color(255, 125, 75);
@@ -33,7 +33,7 @@ public class XDP_Trails extends BaseEveryFrameCombatPlugin {
     private static final Color CANISTER_SUBMUNITION_TRAIL_COLOR_END = new Color(150, 90, 70);
 
     private static final float SIXTY_FPS = 1f / 60f;
-    private static final String DATA_KEY = "NSP_Trails";
+    private static final String DATA_KEY = "XDP_Trails";
 
     private CombatEngineAPI engine;
 

@@ -25,7 +25,7 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "swp_inferno"
+        "WS0002": "heavyburst"
       }
     },
     {

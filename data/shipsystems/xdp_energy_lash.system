@@ -7,7 +7,7 @@
 	"runScriptWhileIdle":true,
 	#"canUseWhileRightClickSystemOn":true,
 	
-	"statsScript":"neon.xdp_.data.shipsystems.xdp_EnergyLashSystemScript",
+	"statsScript":"neon.xdp.data.shipsystems.xdp_EnergyLashSystemScript",
 	
 	"useSound":"xdp_disabling_strike",
 	"outOfUsesSound":"gun_out_of_ammo",

@@ -31,7 +31,7 @@ import com.fs.starfarer.api.util.Misc.FindShipFilter;
 import com.fs.starfarer.api.impl.combat.threat.VoltaicDischargeOnFireEffect;
 import com.fs.starfarer.api.impl.combat.threat.EnergyLashActivatedSystem;
 
-public class XDP_EnergyLashSystemScript extends BaseShipSystemScript {
+public class xdp_EnergyLashSystemScript extends BaseShipSystemScript {
 
 	public static float MAX_LASH_RANGE = 1500f;
 
