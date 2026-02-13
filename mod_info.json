@@ -3,7 +3,7 @@
 	"name":"Xxarra's Derelict Pack", # displayed to the player
 	"author":"Xxarra",
 	"jars":["jars/XDP.jar"],
-	"version":"3.0.5.9",
+	"version":"0.5",
 	"description":"A small, gradually growing collection of ships. Credit to Minideth3, TouchOfVanilla, Histidine, USC, Corvus, The StarSector subreddit, and many others for script help, feedback, and support during the mod's development. Enjoy!",
 	"gameVersion":"0.98a-RC5",
         "dependencies": [
