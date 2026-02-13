@@ -1,0 +1,66 @@
+{
+  "variantId": "xdp_templar_prow_standard",
+  "hullId": "xdp_templar_prow",
+  "displayName": "Enforcement",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 40,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "autorepair",
+    "fluxbreakers",
+    "reinforcedhull",
+    "blast_doors",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xdp_derelictbomber",
+    "xdp_derelictbomber",
+    "xdp_derelictfighter",
+    "xdp_derelictfighter",
+    "xdp_derelictfighter",
+    "xdp_gun_platform",
+    "xdp_gun_platform2",
+    "xdp_gun_platform3"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+	"id":"xdp_temporaljaunt",
+	"type":"PHASE_CLOAK",
+	#"aiType":"HIGH_ENERGY_FOCUS",
+	"aiType":"PHASE_CLOAK",
+	
+	"statsScript":"neon.xdp_.data.shipsystems.xdp_TemporalJaunt",
+
+
+         "canNotCauseOverload":true,
+
+        "effectColor1":[255,220,0,255],
+	"effectColor2":[255,170,0,150],
+
+	
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
+
+	
+	"weaponGlowColor":[255,60,40,185],
+	"weaponTypes":[ENERGY,BALLISTIC],
+	
+	"engineGlowColor":[255,60,40,255],
+	"engineGlowWidthMult":1.5,
+	
+	#"useSound":"beam_heavy_intro",
+	#"outOfUsesSound":"gun_out_of_ammo",
+
+	#"activatingShieldsCancels":true,
+	
+	"clampTurnRateAfter":false,
+	"clampMaxSpeedAfter":false,	
+		
+	"useSound":"xdp_elysium_dive_activate",
+	#"deactivateSound":"system_phase_cloak_deactivate",
+	"deactivateSound":"xdp_elysium_dive_deactivate",
+	"outOfUsesSound":"system_phase_cloak_collision",
+
+}

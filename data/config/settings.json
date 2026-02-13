@@ -1,0 +1,45 @@
+{
+	
+	"xdp_InvictaHasRandomThoughts":true,
+	"plugins":{
+                "xdp_shipExplosion":"neon.xdp.data.plugins.xdp_shipExplosion",
+
+	},
+	"drop_prob_officer_xdp_invicta_core": 0,
+	"ruleCommandPackages":[
+		"neon.xdp.data.scripts.rulecmd",
+		"neon.xdp.data.scripts.rulecmd.util"
+	],
+    "graphics":{	
+        "ui":{
+        },
+	"glows":{
+        },		
+        "shields":{
+        },
+		"blueprint_packages":{
+		},
+		
+		"abilities":{
+		},
+		
+		"SUPERDERELICT":{
+			"SPD_shield_inner":"graphics/fx/xdp_FX/xdp_derelictShield.png",
+			"SPD_shield_outer":"graphics/fx/xdp_FX/xdp_derelictShield_ring.png",
+		},
+
+		"characters":{
+			"Invicta":"graphics/portraits/characters/Invicta.png",
+			"The Exponent":"graphics/portraits/characters/exponent_core.png",
+		},
+        "fx":{
+			"xdp_Flare":"graphics/fx/xdp_FX/xdp_FlareA.png",
+                        "shield_ring":"graphics/fx/distortion.png",
+                        "xdp_impact_shockwave":"graphics/fx/xdp_impact_shockwave.png",
+                        "xdp_nuke_risidual":"graphics/fx/xdp_nuke_risidual.png",
+						"xdp_drill_cloud":"graphics/fx/xdp_drill_cloud.png",
+						"xdp_shockwave":"graphics/fx/xdp_shockwave.png",
+ 
+        },
+    }
+},

@@ -1,0 +1,164 @@
+{
+  "xdp_phasetunneleractivate":
+  [
+    {"file":"sounds/shipsystems/xdp_phasetunneler_activate.ogg","pitch":1,"volume":0.5},
+  ],
+
+  "xdp_phasetunnelerblast":
+  [
+    {"file":"sounds/shipsystems/xdp_phasetunneler_blast.ogg","pitch":1,"volume":0.5},
+  ],
+
+  "xdp_invicta_death":
+  [
+    {"file":"sounds/xdp_invicta_death.ogg","pitch":1,"volume":0.5},
+  ],
+
+  "xdp_messenger_ambience":
+  [
+    {"file":"sounds/messenger_ambient.ogg","pitch":1,"volume":0.5},
+  ],
+
+  "xdp_rampage_start":
+  [
+    {"file":"sounds/rampager_activate.ogg","pitch":1,"volume":0.5},
+  ],
+
+  "xdp_rampage":
+  [
+    {"file":"sounds/rampager_loop.ogg","pitch":1,"volume":0.5},
+  ],
+
+  "xdp_rampager_boss_theme":
+  [
+    {"file":"sounds/xdp_rampager_theme.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_templar_boss_theme":
+  [
+    {"file":"sounds/xdp_templar_theme.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_material_obliterator_fire":
+  [
+    {"file":"sounds/material_obliterator.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_rampager_theme":
+  [
+    {"file":"sounds/xdp_rampager_theme.ogg","pitch":1,"volume":0.5},
+  ],
+  "kardakes_feeder":
+  [
+    {"file":"sounds/kardakes_feeder4.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_blink_drive":
+  [
+    {"file":"sounds/xdp_blink_drive1.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_mass_annihilator_fire":
+  [
+    {"file":"sounds/xdp_mass_annihilator_fire.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_mass_annihilator_charge":
+  [
+    {"file":"sounds/xdp_annihilator_loop.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_sandevistan_loop":
+  [
+    {"file":"sounds/xdp_sandevistan_loop.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_elysium_dive_activate":
+  [
+    {"file":"sounds/elysium_dive.ogg","pitch":1,"volume":1},
+  ],
+  "xdp_elysium_dive_deactivate":
+  [
+    {"file":"sounds/elysium_dive_deactivate.ogg","pitch":1,"volume":1},
+  ],
+
+  "xdp_invicta_phase1":
+  [
+    {"file":"sounds/xdp_invicta_phase1.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_invicta_phase2":
+  [
+    {"file":"sounds/xdp_invicta_phase2.ogg","pitch":1,"volume":0.5},
+  ],
+
+  "xdp_invicta_phase3":
+  [
+    {"file":"sounds/xdp_invicta_phase3.ogg","pitch":1,"volume":0.5},
+  ],
+
+  "xdp_disabling_strike":
+  [
+    {"file":"sounds/shipsystems/xdp_disabling_strike.ogg","pitch":1,"volume":0.5},
+  ],
+
+
+
+  "xdp_tyrfing_fire":
+  [
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_01_loud.ogg","pitch":0.9,"volume":0.7},
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_01_loud.ogg","pitch":1.0,"volume":0.7},
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_01_loud.ogg","pitch":1.1,"volume":0.7},
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_02_loud.ogg","pitch":0.9,"volume":0.7},
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_02_loud.ogg","pitch":1.0,"volume":0.7},
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_02_loud.ogg","pitch":1.1,"volume":0.7},
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_03_loud.ogg","pitch":0.9,"volume":0.7},
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_03_loud.ogg","pitch":1.0,"volume":0.7},
+    {"file":"sounds/sfx_wpn_guns/mjolnir_fire_03_loud.ogg","pitch":1.1,"volume":0.7},
+  ],
+
+  # CANISTER CANNON
+  "xdp_canistercannon_fire":[
+    {"file":"sounds/sfx_wpns_guns/xdp_canistercannon_fire.ogg","pitch":0.95,"volume":1.0},
+    {"file":"sounds/sfx_wpns_guns/xdp_canistercannon_fire.ogg","pitch":1.00,"volume":1.0},
+    {"file":"sounds/sfx_wpns_guns/xdp_canistercannon_fire.ogg","pitch":1.05,"volume":1.0},
+  ],
+  "xdp_canistercannon_split":{
+    "sounds":[
+      {"file":"sounds/sfx_impacts/explosion_missile_01.ogg","pitch":0.76,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_01.ogg","pitch":0.77,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_01.ogg","pitch":0.78,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_01.ogg","pitch":0.79,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_01.ogg","pitch":0.80,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_02.ogg","pitch":0.76,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_02.ogg","pitch":0.77,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_02.ogg","pitch":0.78,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_02.ogg","pitch":0.79,"volume":1.0},
+      {"file":"sounds/sfx_impacts/explosion_missile_02.ogg","pitch":0.80,"volume":1.0},
+    ],
+  },
+
+  "music":{
+    "xdp_invicta_encounter1":
+    [
+      {"file":"xdp_invicta_encounter1.ogg","source":"sounds/music","volume":1},
+    ],
+    "xdp_derelict_enc_hostile":
+    [
+      {"file":"xdp_derelict_enc_hostile.ogg","source":"sounds/music","volume":1},
+    ],
+    "xdp_derelict_enc_friendly":
+    [
+      {"file":"xdp_derelict_enc_friendly.ogg","source":"sounds/music","volume":1},
+    ],
+    "xdp_derelict_enc_neutral":
+    [
+      {"file":"xdp_derelict_enc_neutral.ogg","source":"sounds/music","volume":1},
+    ],
+
+
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+}

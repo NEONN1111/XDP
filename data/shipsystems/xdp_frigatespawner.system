@@ -1,0 +1,9 @@
+{
+	"id":"xdp_frigatespawner",
+	"type":"WEAPON",
+	"aiType":"CUSTOM", 
+	"aiScript":"neon.xdp.data.scripts.xdp_DroneDeployerAI",
+	
+	"weaponDataId":"xdp_luminancebay",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

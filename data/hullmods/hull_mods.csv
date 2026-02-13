@@ -1,0 +1,24 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+Increased Explosion,increased_explosion,,,,"no_drop, no_sell",,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.IncreasedExplosion,Reduced explosion radius and damage.,,,graphics/hullmods/reduced_explosion.png
+Heavy Composite Integration,heavycompositeintegration_xdp_,,,,"no_drop, no_sell",,,,TRUE,,0,0,0,0,neon.xdp.data.hullmods.HeavyCompositeIntegrationXDP,Reduces the ordnance point cost of large ballistic and missile weapons by %s.,Reduces ordnance point cost of large ballistic and missile weapons.,,graphics/hullmods/heavycomposite.png
+AFAFAFAFAFAFAFAFA,xdp_ammofeeders,0,,,,,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.XDP_AAFSubSystem,,,,graphics/icons/intel/investigation.png
+FLAREFLAREFLAREFLARE,xdp_flarelaunchers,0,,,,,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.XDP_FlareLauncherHullmod,,,,graphics/icons/intel/investigation.png
+Enraged Systems,xdp_sandevistan,,,,"no_drop, no_sell, restricted",,,,TRUE,,0,0,0,0,neon.xdp.data.hullmods.XDPSandyEffect,"At the heart of this infernal vessel's unsettlingly advanced technological entrails lie a series of anomalous subsystems, driving its capability for rampant destruction. A majority of these systems operate by capturing energy resulting from overloading starship reactors.
+",,,graphics/hullmods/enraged_systems.png
+HULLMOD CONFLICT,xdp_incompatible,,,,,,,,TRUE,,0,0,0,0,neon.xdp.data.hullmods.XDPIncompatible,INCOMPATIBLE HULLMOD,,,graphics/icons/intel/investigation.png
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Targeting Supercomputer,xdp_supercomputer,,,,,,,,TRUE,,0,0,0,0,neon.xdp.data.hullmods.XDP_TargetingSupercomputer,An extremely advanced targeting array is integrated into this vessel.,,,graphics/hullmods/targeting_supercomputer.png
+Invicta,invicta_assignment,,,,"no_drop, no_sell, restricted",,,,TRUE,,0,0,0,0,neon.xdp.data.hullmods.InvictaAssignment,"Integrated into the control systems of this colossal vessel, the AI core, Invicta, cannot be removed by any conventional means, short of destroying the vessel.",,,graphics/hullmods/invicta_assignment.png
+Communications Array,xdp_messengerambience,,,,"no_drop, no_sell, restricted",,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.XDP_MessengerAmbient,A state-of-the-art hyperwave array is used by this ship to broadcast music at FTL.,Plays music.,,graphics/hullmods/high_res_sensors.png
+,,,,,,,,,,,,,,,,,,,
+HIDDEN SHIELD HULLMOD,xdp_shield,,,,"no_drop, no_sell, restricted",,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.XDP_shield,YOU SHOULDNT SEE THIS AHAHAHAHAHAHAHA,,,graphics/hullmods/front_shield_generator.png
+HIDDEN SHIELD HULLMOD 2,xdp_shield_arcing,,,,"no_drop, no_sell, restricted",,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.XDP_Shield_Arcing,YOU SHOULDNT SEE THIS AHAHAHAHAHAHAHA,,,graphics/hullmods/front_shield_generator.png
+AI Switch Penalty,xdp_aiswitch_penalty,,,,"no_drop, restricted, no_build_in",,,,TRUE,TRUE,8,15,25,40,neon.xdp.data.hullmods.XDP_aiswitch_penalty,,,,
+AI Switch,xdp_aiswitch,,,,"no_drop, codex_unlockable",,,,,,8,15,25,40,neon.xdp.data.hullmods.XDP_aiswitch,"Overhauls any current automation on the vessel. Installs support for both a dedicated bridge that can contain a captain and their crew, as well as a prototype AI core cradle.",,,graphics/icons/markets/rogue_ai.png
+Manual Mode,xdp_aiswitch_manual,,,,"no_drop, restricted, codex_unlockable",,,,TRUE,,0,0,0,0,neon.xdp.data.hullmods.XDP_aiswitch_manual,Currently in Manual mode.,,,
+Auto Mode,xdp_aiswitch_auto,,,,"no_drop, restricted, codex_unlockable",,,,TRUE,,0,0,0,0,neon.xdp.data.hullmods.XDP_aiswitch_auto,Currently in Automated mode.,,,
+Linked Hull,xdp_linkedhull,,,,,,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.XDP_LinkedHull,Mirrors certain aspects between the parent and child hulls.,,,graphics/hullmods/vast_bulk.png
+Massive Hull,xdp_massivehull,,,,codex_require_related,,,,TRUE,,0,0,0,0,neon.xdp.data.hullmods.XDP_MassiveHull,"This ship is extremely large, affording both a larger array of sensors and a heavy sensor profile. Increases sensor strength and sensor profile by %s.",Increases sensor strength and profile.,,graphics/hullmods/vast_bulk.png
+FIGHTER COLLISION CLASS,xdp_fightercoll,,,,"no_drop, restricted, no_build_in,",,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.XDP_SetFighterColl,,,,
+JETJETJETPLASMA,xdp_plasmajets,0,,,,,,,TRUE,TRUE,0,0,0,0,neon.xdp.data.hullmods.XDP_PlasmaJetsHullmod,,,,graphics/icons/intel/investigation.png

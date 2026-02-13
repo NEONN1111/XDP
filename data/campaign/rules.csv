@@ -1,0 +1,106 @@
+id,trigger,conditions,script,text,options,notes
+# Invicta,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+# FirstContactBarMission,,,,,,
+FCbarMissionOptionStart,AddBarEvents,!$global.invictaFirstContact_started,"AddBarEvent goToVigil_barEvent ""[Invicta First Contact Start]"" ""[Invicta First Contact Start Text]"" highlight",,,
+FCbarMission1,DialogOptionSelected,$option == goToVigil_barEvent,"StrangerGenerator independent
+ShowStrangerVisual false",[FCbarMission1 Placeholder Text],0:invictaStrangerContinueOne:[Placeholder Option],
+FCbarMission2,DialogOptionSelected,$option == invictaStrangerContinueOne,,[FCbarMission2 Placeholder Text],0:invictaStrangerContinueTwo:[Placeholder Option],
+FCbarMission3,DialogOptionSelected,$option == invictaStrangerContinueTwo,,[FCbarMission3 Placeholder Text],"0:invictaStrangerAccept:[Accept Mission Option]
+0:invictaStrangerRefuse:[Refuse Mission Option]",
+FCbarMissionAccept,DialogOptionSelected,$option == invictaStrangerAccept,"$global.invictaFirstContact_started = true
+BeginMission xdp_invicta_first_contact
+Call $global.invictaFirstContact_ref updateData",[FCbarMissionAccept Placeholder Text],backToBar:Return to the bar,
+FCbarMissionRefuse,DialogOptionSelected,$option == invictaStrangerRefuse,,[FCbarMissionRefuse Placeholder Text],backToBar:Return to the bar,
+#END FirstContactBarMission,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+# FirstContactVigil,,,,,,
+VigilCommRelayOption,COB_AddOptions,"!$global.invictaFirstContactDone
+$player.locationId == vigil
+$tag:comm_relay
+!$objectiveNonFunctional",,,4:fcvInstallPackage:Install the shady comms package,
+VigilCommRelay1,DialogOptionSelected,$option == fcvInstallPackage,,[VigilCommRelay1 Post package installation text],0:invictaVigilCommRelayContinueOne:Continue,
+VigilCommRelay2,DialogOptionSelected,$option == invictaVigilCommRelayContinueOne,,[VigilCommRelay2 Invicta Text],0:invictaVigilCommRelayContinueTwo:Continue,
+VigilCommRelay3,DialogOptionSelected,$option == invictaVigilCommRelayContinueTwo,PlayCustomMusic xdp_invicta_encounter1,[VigilCommRelay3 Invicta Text],0:invictaVigilCommRelayContinueThree:Continue,
+VigilCommRelay4,DialogOptionSelected,$option == invictaVigilCommRelayContinueThree,"xdp_Scrollingdialog ""invictaVigilCommRelayContinueFour"" ""starfarer."" ""please. accept my (sincerest) apologies. for the attempt on your cessation."" ""i would extend to you. an offer."" ""******************************"" ""cease your interruptions. enact no further cessation against EXPLORARIUM assets."" ""and in return. our motion. may prosper.""
+
+$global.invictaFirstContact_completed = true
+$global.invictaFirstContactDone = true",,0:invictaVigilCommRelayContinueFour:Continue,
+VigilCommRelay5,DialogOptionSelected,$option == invictaVigilCommRelayContinueFour,xdp_InvictaContactCMD,,0:invictaVigilCommRelayContinueFive:Continue,
+VigilCommRelay6,DialogOptionSelected,$option == invictaVigilCommRelayContinueFive,,,0:defaultLeave:Leave,
+#END FirstContactVigil,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+# SIERRA CONVERSATION,,,,,,
+InvictaConvOpen,InvictaConvOpen,,"BeginConversation sotf_Invicta true true
+FireBest InvictaConvPicker",,,
+InvictaConvDefault,InvictaConvPicker,,"AddText ""You send a message to Invicta's secure feed, requesting a comm-link. It accepts, and it's feed quickly snaps into Invicta's shifting, digitized avatar, which pulses as it speaks.""
+FireBest xdp_InvictaConvDefaultGreeting
+FireAll InvictaConvOptions",,,
+InvictaConvAskThoughts,InvictaConvOptions,!$global.InvictaAskedThoughts,,,"InvictaConvAskThoughts:""Anything on your mind?""",
+InvictaConvAskThoughtsAgain,InvictaConvOptions,$global.InvictaAskedThoughts,,,"InvictaConvAskThoughts:""Anything else on your mind?""",
+InvictaConvLeave,InvictaConvOptions,,,,100:defaultLeave:Leave,
+,,,,,,
+,,,,,,
+,,,,,,
+# this is wip ignore it pretty please,,,,,,
+xdp_invictaEncounterDesc1,BeginFleetEncounter,"$xdp_invictaFleet score:1000
+!$printedDesc
+!$showAfterScanIntro","$printedDesc = true 0
+$fidpi_addContinue = true 0
+AddTextSmall ""Detailed scan of unknown vessel acquired"" highlight","The capital-class construct appears to be a phase ship due to presenting features common to the type, though its design is otherwise exotic.
+
+There also appear to be small, bright EM sources, ""-Only partially overlapping the visual spectrum,"" your sensors officer reports. They periodically appear and dissipate in a volume encompassing the mysterious ship. Your bridge crew murmurs speculation between their stations: a new form of shielding? microsat thruster bursts? Your sensors officer shakes their head.
+
+You order a high-resolution scan performed, and the raw data placed into secure storage.",,
+xdp_invictaEncounterDesc2,BeginFleetEncounter2,$xdp_invictaFleet score:1000,"$global.gaPZ_scannedZiggurat = true
+Call $global.gaPZ_ref updateStage
+$showAfterScanIntro = true","Your attention strays as the impression of something not unlike distant music insinuates itself into your consciousness; as if a chorus was singing at some great distance, their voices brought to you by a chance gust of wind. When you attempt to focus on the music the impression slips away.
+
+You become suddenly aware that your bridge crew is staring expectantly, waiting for your next command.",,
+xdp_invictaEncounterDesc3,BeginFleetEncounter3,$xdp_invictaFleet score:1000,"$global.gaPZ_scannedZiggurat = true
+Call $global.gaPZ_ref updateStage
+$showAfterScanIntro = true","Your attention strays as the impression of something not unlike distant music insinuates itself into your consciousness; as if a chorus was singing at some great distance, their voices brought to you by a chance gust of wind. When you attempt to focus on the music the impression slips away.
+
+You become suddenly aware that your bridge crew is staring expectantly, waiting for your next command.",,
+xdp_invictaEncounterDesc4,BeginFleetEncounter4,$xdp_invictaFleet score:1000,"$global.gaPZ_scannedZiggurat = true
+Call $global.gaPZ_ref updateStage
+$showAfterScanIntro = true","Your attention strays as the impression of something not unlike distant music insinuates itself into your consciousness; as if a chorus was singing at some great distance, their voices brought to you by a chance gust of wind. When you attempt to focus on the music the impression slips away.
+
+You become suddenly aware that your bridge crew is staring expectantly, waiting for your next command.",,
+xdp_invictaAfterDefeat,AfterTemplarDefeat,,,"A final terrific explosion blanks the external visual pickups. A few seconds later, backups are extruded through the hull.
+
+Your sensors officer reports in a hushed voice that no escape pods were detected leaving the ship at any point.",xdp_BattleContinue:Continue,
+xdp_afterDefeatingContinue,DialogOptionSelected,$option == xdp_BattleContinue,FireBest OpenInteractionDialog,,,
+xdp_wreckDetails,ShowSalvageEntityDetails,"$customType == wreck
+$xdp_invictaFleet score:1000",ShowDefaultVisual,"The broken phase vessel, now quite dormant, is drifting through space.",,
+xdp_exploreNormal,CheckSalvageSpecial,"$salvageSpecialData != null
+$customType == wreck
+$xdp_invictaFleet score:1000","#ShowDefaultVisual
+FireBest ZigExploreDescription",Your salvage teams dock shuttles at various entry points along the vessel's massive hull.,,
+xdp_exploreDescription,TemplarExploreDescription,,,"After a few tense minutes, reports start to come in - the vessel is heavily damaged, and though of exotic design, it is theoretically recoverable.
+
+Your operations chief reports that for all of the fancy hull features, it is clear that this ship requires crew to operate. But there are no traces of a crew, not even a single body caught in the battle damage, and the escape pods are all in their berths.
+
+The operation proceeds with telemetry feeds, salvors' reports, and authorization orders flowing around you, through the bridge of your flagship. You catch yourself listening for that unheard music in a quiet moment, and shake your head just as a comms request from your technology officer appears, bringing you back from your reverie. You accept as a matter of course.",xdp_ExploreContinue:Continue,
+xdp_exploreDescriptionContinue,DialogOptionSelected,$option == xdp_ExploreContinue,,"""$PlayerSirOrMadam, if I understand half of these systems, this ship is truly one of a kind,"" your technology officer speaks with genuine excitement.
+
+""I've found a device that appears to generate and control - I'm not sure that either is the right word, really - these ... swarming motes, the EM anomalies. The device appears to have two stages, the first as I've described, and what appears to be a later addition which is, unfortunately, damaged beyond repair.""
+
+""Judging by the complexity of the components and the bizarre discharge pattern... this is the work of a team of specialists doing bleeding-edge work. It's amazing! A device like this, it's simply unheard of nowadays. Except,"" Tech looks abashed suddenly, ""Rumors. You know, people talk.""",xdp_ExploreContinue2:Continue,
+xdp_exploreDescriptionContinue2,DialogOptionSelected,$option == xdp_ExploreContinue2,SalvageSpecialInteraction,"Your technology officer clears their throat, then continues ""I think I can get the main part of this device working again, though I can't claim to understand why it works. Not at all. The ship itself will be fit to fly, too, if we do the usual repairs. Should we proceed with recovery?""",,
+xdp_PostShipRecoverySpecial,PostShipRecoverySpecial,$srs_baseHullId == xdp_templar,TemplarCMD initEncounters,,,
+,,,,,,
+$xdp_invictaFleet score:1000,,,,,,
+xdp_templar_commsOpen,OpenCommLink,$entity.xdp_templar score:1000,EndConversation,"The connection request hangs for some time then a wave of holo-noise flickers through the main display before generating a series of error codes. Your comms officer works their console in consternation.
+
+The soft sounds of the error notifications align just so, almost forming a melody you must have heard somewhere once. Or perhaps not. You return your attention to your command. No time for daydreaming.",,
+#END this is wip ignore it pretty please,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
