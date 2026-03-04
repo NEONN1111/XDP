@@ -103,4 +103,84 @@ The soft sounds of the error notifications align just so, almost forming a melod
 #END this is wip ignore it pretty please,,,,,,
 ,,,,,,
 ,,,,,,
+# nexus custom start interactions,,,,,,
 ,,,,,,
+xdp_nexusOpen,ShowSalvageEntityDetails,"$customType == derelict_mothership
+$global.xdp_nexusStart score:10000","xdp_nexusStartRulecmd 0
+ShowImageVisual orbital","The Explorarium Mothership welcomes you into its graces, allowing you to make use of its services.","0:xdp_nexusCargoPicker:Evaluate the Mothership's cargo
+10:xdp_nexusProductionPicker:Request immediate production
+30:xdp_nexusStorage:Access the storage network
+50:xdp_nexusRepair:Initiate fleet repairs
+70:xdp_nexusDeconstructMain:Manage automated hulls
+90:xdp_nexusConstructMenu:Consider building a new Mothership
+100:defaultLeave:Leave",
+xdp_nexusDialog1,DialogOptionSelected,$option == xdp_nexusCargoPicker,xdp_nexusStartRulecmd 1,,,
+xdp_nexusDialog2,DialogOptionSelected,$option == xdp_nexusProductionPicker,xdp_nexusStartRulecmd 2,,,
+xdp_nexusDialog3,DialogOptionSelected,$option == xdp_nexusStorage,"EndConversation NO_CONTINUE
+xdp_nexusStartRulecmd 3",,,
+xdp_nexusDialog4,DialogOptionSelected,$option == xdp_nexusRepair,xdp_nexusStartRulecmd 4,Your $shipOrFleet has been fully repaired at no cost.,,
+xdp_nexusDeconstruct1,DialogOptionSelected,$option == xdp_nexusDeconstructMain,"xdp_nexusStartRulecmd 13
+AddTextSmall ""You may deconstruct automated hulls here, as long as they normally require the Automated Ships skill to recover.""
+AddTextSmall ""Doing so will destroy the ship, but will allow the Explorarium to use the hull.""
+AddTextSmall ""Access to the faction's weapons, fighters and AI cores (if applicable) will be gained at 50/75/90% collection progress respectively."" highlight",,"0:xdp_nexusDeconstruct:Deconstruct automated hulls
+30:xdp_nexusRecap:View collection progress
+50:xdp_nexusBack:Return
+",
+xdp_nexusDeconstruct2,DialogOptionSelected,$option == xdp_nexusDeconstruct,xdp_nexusStartRulecmd 8,,,
+xdp_nexusDeconstruct3,DialogOptionSelected,$option == xdp_nexusRecap,xdp_nexusStartRulecmd 12,,,
+xdp_nexusDialog6,DialogOptionSelected,$option == xdp_nexusDeconstructProceed,xdp_nexusStartRulecmd 9,,,
+xdp_nexusDialog7,DialogOptionSelected,$option == xdp_nexusBack,xdp_nexusStartRulecmd 5,,,
+xdp_nexusDialog8,DialogOptionSelected,"$option == salExplore
+#$faction.id == derelict
+$customType == derelict_mothership score:10000
+$global.xdp_nexusStart",xdp_nexusStartRulecmd 5,,,
+xdp_nexusConstructMenu,DialogOptionSelected,$option == xdp_nexusConstructMenu,xdp_nexusStartRulecmd 14,"With sufficient materials, you may dispatch a fleet to a target star system to construct a new Mothership. It will be fully operational 30 days after the fleet arrives. You must have visited the system at least once.
+You may only dispatch one fleet every 90 days.","0:xdp_nexusConstruct:Choose a location
+50:xdp_nexusBack:Back",
+xdp_nexusConstruct,DialogOptionSelected,$option == xdp_nexusConstruct,xdp_nexusStartRulecmd 15,,,
+xdp_nexusStorage1,MarketPostOpen,$id == xdp_nexusStorage score:10000,"$tradeMode = OPEN 0
+FireBest MarketPostDock
+xdp_nexusStartRulecmd 6",,,
+xdp_nexusStorage2,TradePanelFlavorText,$id == xdp_nexusStorage score:1000,,The flow of vast datastores bring with them opportunity. No distance is too great to retrieve a perfect simulacra of vessels and armaments once uploaded.,,
+,,,,,,
+xdp_nexusStorage3,PopulateOptions,"$id == xdp_nexusStorage score:10000
+$menuState == main",xdp_nexusStartRulecmd 7,,,
+xdp_nexusComms,DialogOptionSelected,$option == xdp_nexusComms,"BeginConversation nex_dissonant
+FireBest PickGreeting
+xdp_nexusStartRulecmd 10",,,
+xdp_nexusRedirect,DialogOptionSelected,$option == xdp_nexusRedirect,"xdp_nexusStartRulecmd 11
+xdp_nexusStartRulecmd 5",,,
+,,,,,,
+xdp_nexusDefenderSkip,DialogOptionSelected,"$option == salExplore score:1000
+xdp_getRemnantDefenders 1
+$global.xdp_nexusStart
+$player.commissionFactionId == derelict","
+xdp_getRemnantDefenders 2","A fleet of Explorarium drones is guarding this object. They don't appear to recognize you yet.
+
+They're currently engaged in an automatic defensive protocol, but you may transmit your IFF code to disengage it.",0:xdp_noyeetRemmies:Continue as normal,
+xdp_nexusDefenderSkip2,DialogOptionSelected,$option == xdp_yeetRemmies,xdp_getRemnantDefenders 3,"Your $shipOrFleet chirps out a request with your transponder code, with a request to stand down. Some moments later, the drone defenders process the information and plod away from the wreck in search of a new task.",0:salBeatDefendersContinue:Continue,
+xdp_nexusDefenderSkip3,DialogOptionSelected,$option == xdp_noyeetRemmies,SalvageDefenderInteraction,,,
+,,,,,,
+# raid option,,,,,,
+xdp_nexusPartyTimeShow,DialogOptionSelected,$option == xdp_nexusPartyTimeShow,xdp_nexusStartRulecmd 16,,"0:xdp_nexusPartyTimeInit:Accept the request
+30:xdp_nexusBack:Go back",
+xdp_nexusPartyTimeInit,DialogOptionSelected,$option == xdp_nexusPartyTimeInit,xdp_nexusStartRulecmd 17,,0:xdp_nexusBack:Continue,
+xdp_nexusPartyTimeReward,DialogOptionSelected,$option == xdp_nexusPartyTimeReward,xdp_nexusStartRulecmd 18,,0:xdp_nexusBack:Continue,
+,,,,,,
+# bla,,,,,,
+xdp_nex_marketPostOpenDerelicts,MarketPostOpen,"$hasMarket
+$global.xdp_nexusStart score:10000
+$faction.id == nex_derelict score:10000","$tradeMode = OPEN 0
+FireBest MarketPostDock",$TheFactionLong $factionIsOrAre in control of this location. You may interact since you are with Explorarium.,,
+xdp_nex_marketOptionCommDirDerelicts,PopulateOptions,"$hasMarket
+$menuState == main
+$global.xdp_nexusStart score:10000
+$faction.id == nex_derelict score:1000",SetEnabled marketCommDir true,,,
+,,,,,,
+xdp_nexHistorianOmegaSkip,OpenCommLink,"
+xdp_getHistorianOmega 1
+$global.xdp_nexusStart score:10000
+$player.commissionFactionId == derelict","
+xdp_getHistorianOmega 2","A fleet of Remnant drones is intercepting you, but you may transmit your IFF code to disengage it.",0:xdp_noyeetOmega:Continue as normal,
+xdp_nexHistorianOmegaSkip2,DialogOptionSelected,$option == xdp_yeetOmega,xdp_getHistorianOmega 3,"Your $shipOrFleet chirps out a request with your transponder code, with a request to stand down. Some moments later, the drone interceptors process the information and plod away in search of a new task.",0:defaultLeave:Continue,
+xdp_nexHistorianOmegaSkip3,DialogOptionSelected,$option == xdp_noyeetOmega,FireAll Nex_HistorianOmegaHailOpts,,,

@@ -139,7 +139,7 @@ class PlayerCoreScript implements EveryFrameScript {
         PersonAPI player = sector.getPlayerPerson();
         if (player == null) return;
 
-        // Check if player has the skill and good relations
+
         if (!player.getStats().hasSkill("ds_paradeigma") ||
                 sector.getFaction(Factions.DERELICT).getRelToPlayer().getRel() < -0.2f) {
             removeCore(cargo);
