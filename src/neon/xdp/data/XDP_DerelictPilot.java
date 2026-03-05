@@ -1,4 +1,4 @@
-package neon.xdp.data.scripts.skills;
+package neon.xdp.data;
 
 import com.fs.starfarer.api.EveryFrameScript;
 import com.fs.starfarer.api.Global;
