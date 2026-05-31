@@ -1,11 +1,9 @@
 package neon.xdp.data.hullmods;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.BaseHullMod;
-import com.fs.starfarer.api.combat.MutableShipStatsAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
-import com.fs.starfarer.api.combat.ShipHullSpecAPI;
+import com.fs.starfarer.api.combat.listeners.WeaponBaseRangeModifier;
 import com.fs.starfarer.api.impl.campaign.ids.HullMods;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
@@ -18,7 +16,7 @@ public class XDP_domain_era extends BaseHullMod {
 
 	//buffs for enigma hulls
 
-	//code taken from LOST_SECTOR, all credit goes to original authors
+	//code taken from LOST_SECTOR and High Tech Expansion, all credit goes to original authors
 
 	public static final float SPEED_PENALTY = 5f;
 	public static final float FLUX_BONUS = 15f;
@@ -38,15 +36,21 @@ public class XDP_domain_era extends BaseHullMod {
 	public static float DMOD_EFFECT_MULT = 0.3f;
 	public static float DMOD_AVOID_CHANCE = 35f;
 
-	public static float MISSILE_DAMAGE_REDUCTION = 0.5f;
+	public static float MISSILE_DAMAGE_REDUCTION = -50f;
 
-	public static float MISSILE_ROF_BONUS = 2f;
+	public static float MISSILE_ROF_BONUS = 5f;
 
 	public static float NON_SHIELD_FLUX_LEVEL = 50f;
 
 	public static float VENT_RATE_BONUS = 25f;
 
 	public static float HARD_FLUX_DISS_BONUS = 2.5f;
+
+	public static final float RELOAD_PERCENT = 0.1f;
+
+	public static final float RELOAD_TIME = 60f;
+
+	public static float RANGE_THRESHOLD = 700f;
 
 
 	public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -102,7 +106,34 @@ public class XDP_domain_era extends BaseHullMod {
 
 	@Override
 	public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
+		ship.addListener(new SuperderelictRangeMod());
+		for (WeaponAPI wep : ship.getAllWeapons()) {
+			if (wep.getType().equals(WeaponAPI.WeaponType.MISSILE)) {
+				wep.getAmmoTracker().setAmmoPerSecond(wep.getAmmoPerSecond() + (wep.getMaxAmmo() * RELOAD_PERCENT) / 60f);
+				wep.getAmmoTracker().setReloadSize(wep.getSpec().getBurstSize());
+			}
+		}
+	}
 
+	public static class SuperderelictRangeMod implements WeaponBaseRangeModifier {
+		public SuperderelictRangeMod() {
+		}
+		public float getWeaponBaseRangePercentMod(ShipAPI ship, WeaponAPI weapon) {
+			return 0;
+		}
+		public float getWeaponBaseRangeMultMod(ShipAPI ship, WeaponAPI weapon) {
+			return 1f;
+		}
+		public float getWeaponBaseRangeFlatMod(ShipAPI ship, WeaponAPI weapon) {
+			if (weapon.isBeam() || weapon.getType() == WeaponAPI.WeaponType.BALLISTIC) {
+				float range = weapon.getSpec().getMaxRange();
+				if (range < RANGE_THRESHOLD) return 0;
+
+				float offset = range - RANGE_THRESHOLD;
+				return -offset;
+			}
+			return 0f;
+		}
 	}
 
 	@Override
@@ -126,6 +157,15 @@ public class XDP_domain_era extends BaseHullMod {
 	}
 
 
+	public String getDescriptionParam(int index, HullSize hullSize) {
+		if (index == 0)
+			return (int)(RELOAD_PERCENT * 100f) + "%";
+		if (index == 1)
+			return (int)(RELOAD_TIME) + " seconds";
+		return null;
+	}
+
+
 	@Override
 	public boolean affectsOPCosts() {
 		return true;
@@ -133,15 +173,25 @@ public class XDP_domain_era extends BaseHullMod {
 
 	@Override
 	public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
-		tooltip.addPara("This vessel is, at glance, a member of the %s. There are, however, glaring differences.", 5f, Color.ORANGE, "Domain Explorarium");
 
-		tooltip.addPara("Negative effects of D-Mods are reduced by %s, and the vessel is less likely to acquire them in combat.", 5f, Color.ORANGE, "30%");
+		tooltip.addPara("This vessel is, at glance, a member of the %s. There are, however, glaring differences.", 15f, Color.ORANGE, "Domain Explorarium");
 
-		tooltip.addPara("Weapon costs are reduced by %s/%s/%s, in order of Large, Medium and Small, respectively.", 5f, Color.ORANGE, "4", "2", "1");
 
-		tooltip.addPara("Missile fire rate is increased by %s, and missile damage is reduced by %s.", 5f, Color.ORANGE, "double", "50%");
+		tooltip.addPara("Negative effects of D-Mods are reduced by %s, and the vessel is less likely to acquire them in combat.", 15f, Color.ORANGE, "30%");
 
-		tooltip.addPara("%s when this ship falls below %s of it's hull level, it will engage a temporay emergency repair protocol. Max speed, energy weapon damage, shield speed and raise rate are all augmented during this period. This system cannot activate if the vessel is %s.", 5f, Color.ORANGE, "Emergency Repair:", "33%", "overloaded");
+
+		tooltip.addPara("Weapon costs are reduced by %s/%s/%s, in order of Large, Medium and Small, respectively.", 15f, Color.ORANGE, "4", "2", "1");
+
+
+		tooltip.addPara("Missile fire rate is increased %s, and missile damage is reduced by %s.", 15f, Color.ORANGE, "significantly", "50%");
+
+
+		tooltip.addPara("%s when this ship falls below %s of it's hull level, it will engage a temporay emergency repair protocol, briefly shunting the vessel into an alternate reality before emerging violently. Max speed, energy weapon damage, shield speed and raise rate are all augmented during this period. This system cannot activate if the vessel is %s.", 15f, Color.ORANGE, "Emergency Repair:", "33%", "overloaded");
+
+
+		tooltip.addPara("%s: Missiles weapons gain ammo regeneration equal to %s of their maximum ammo per minute.", 15f, Color.ORANGE, "Missile Forge", "10%");
+
+
 	}
 }
 

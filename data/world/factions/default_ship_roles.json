@@ -4,6 +4,7 @@
              
                 "guardian_Standard":2,
                 "xdp_nemetor_standard":0.1,
+				"xdp_guardian_standard":0.1,
        
               
 		
@@ -42,15 +43,15 @@
            
     },
     "combatLarge":{
-                   "xdp_superderelict_standard":0.3,
+                   "xdp_superderelict_standard":0.9,
                    "xdp_superderelict_plasma":0.3,
 	           "xdp_derelict_blockhead_standard":3,
                    "xdp_derelict_blockhead_Assault":4,
 		   "xdp_derelict_messenger_standard":3,
                    "xdp_derelominator_standard":1,
-                   "xdp_hermod_standard":0.5,
+                   "xdp_hermod_standard":0.9,
                    "xdp_luminance_standard":0.9,
-                   "xdp_recluse_standard":0.7,
+                   "xdp_recluse_standard":0.9,
 				   "xdp_perun_standard":5,
 				   "xdp_silo_standard":8,
 				   "xdp_cargoplatform_standard":6,
@@ -58,7 +59,9 @@
 				   "xdp_replevin_standard":7,
 				   "xdp_derelictpursuit3_standard":5,
 				   "xdp_derelictpursuit_standard":6,
-				   "xdp_rampager_standard":0.3,
+				   "xdp_rampager_standard":0.6,
+				   "xdp_superderelict_carrier_standard":0.4,
+				   "xdp_guardian_standard":0.4,
  
              
                

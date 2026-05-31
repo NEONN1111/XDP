@@ -16,7 +16,7 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0013": "hammerrack"
+        "WS0013": "xdp_heavypulse"
       }
     },
     {

@@ -18,6 +18,7 @@
                         "xdp_gleam":0.3,
                         "xdp_parasite":0.7,
                         "xdp_recluse":0.7,
+						"xdp_superderelict_carrier":0.7,
         },
     },
     "knownShips":{
@@ -43,7 +44,8 @@
 						"xdp_derelictpursuit2",
 						"xdp_cargoplatform2",
 						"xdp_replevin",
-						"xdp_derelictpursuit3",],
+						"xdp_derelictpursuit3",
+						"xdp_superderelict_carrier",],
          },
 	"priorityShips":{
 		"tags":[],

@@ -18,7 +18,7 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "autopulse"
+        "WS0002": "xdp_heavypulse"
       }
     },
     {

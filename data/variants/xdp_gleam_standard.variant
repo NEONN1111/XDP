@@ -3,12 +3,11 @@
   "hullId": "xdp_gleam",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 10,
+  "fluxCapacitors": 7,
   "fluxVents": 10,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "targetingunit",
     "armoredweapons",
     "auxiliarythrusters",
     "fluxbreakers"
@@ -18,19 +17,21 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "heavymauler"
+        "WS0002": "lrpdlaser",
+        "WS0003": "lrpdlaser",
+        "WS0006": "pulselaser"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "railgun",
-        "WS0005": "railgun"
+        "WS0004": "irpulse",
+        "WS0005": "irpulse"
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {}
     }
