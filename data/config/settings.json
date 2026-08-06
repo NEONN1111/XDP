@@ -3,6 +3,7 @@
 	"xdp_InvictaHasRandomThoughts":true,
 	"plugins":{
                 "xdp_shipExplosion":"neon.xdp.data.plugins.xdp_shipExplosion",
+				"XDPPaperdollCombatUIAdder":"neon.xdp.data.scripts.util.PaperdollUIPanelAdder",
 
 	},
 	"drop_prob_officer_xdp_invicta_core": 0,

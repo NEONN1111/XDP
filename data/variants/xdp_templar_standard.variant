@@ -27,6 +27,7 @@
       "weapons": {
         "ADJ1": "xdp_adjutant",
         "ADJ2": "xdp_adjutant",
+        "WS0009": "devastator",
         "WS0023": "xdp_adjutant",
         "WS0029": "xdp_adjutant"
       }
@@ -35,7 +36,6 @@
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0017": "squall",
         "WS0018": "squall"
       }
     },
@@ -43,35 +43,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "breach",
-        "WS0006": "breach",
-        "WS0007": "breach",
-        "WS0008": "breach",
-        "WS0015": "locust",
-        "WS0016": "locust",
-        "WS0027": "breachpod",
-        "WS0028": "breachpod"
+        "WS0016": "locust"
       }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {}
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0019": "heavyac",
-        "WS0020": "heavyac",
-        "WS0030": "heavyac",
-        "WS0031": "heavyac"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {}
     },
     {
       "autofire": true,
@@ -79,35 +52,50 @@
       "weapons": {
         "WS0001": "vulcan",
         "WS0002": "vulcan",
-        "WS0003": "dualflak",
-        "WS0004": "dualflak",
-        "WS0009": "dualflak",
         "WS0021": "messenger_builtin",
         "WS0022": "messenger_builtin",
         "WS0032": "vulcan",
         "WS0037": "vulcan",
         "WS0038": "vulcan",
         "WS0039": "vulcan",
-        "WS0040": "vulcan",
-        "WS0041": "vulcan",
-        "WS0042": "vulcan",
-        "WS0043": "vulcan",
         "WS0044": "vulcan",
-        "WS0045": "vulcan",
-        "WS0046": "vulcan",
-        "WS0047": "vulcan"
+        "WS0045": "vulcan"
       }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
     }
   ],
   "modules": [
     {
-      "TEM1": "xdp_templar_prow_standard"
+      "TEM1": "xdp_templar_prow_right_standard"
     },
     {
       "TEM2": "xdp_templar_midright_standard"
     },
     {
       "TEM3": "xdp_templar_midleft_standard"
+    },
+    {
+      "WS0007": "xdp_templar_prow_left_standard"
+    },
+    {
+      "WS0005": "xdp_templar_engine_left_standard"
+    },
+    {
+      "WS0006": "xdp_templar_engine_right_standard"
     }
   ],
   "wings": []

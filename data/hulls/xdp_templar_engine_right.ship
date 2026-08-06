@@ -1,0 +1,101 @@
+{
+  "hullName": "<missing hull name>",
+  "hullId": "xdp_templar_engine_right",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/xdp_templar/xdp_templar_engine_right.png",
+  "style": "TEMPLAR",
+  "height": 236,
+  "width": 87,
+  "center": [19.5, 194.5],
+  "collisionRadius": 205,
+  "shieldCenter": [-76.5, -24],
+  "shieldRadius": 0,
+  "viewOffset": 0,
+   "builtInMods": [
+     "always_detaches",
+    "missile_reload",
+    "reduced_explosion",
+    "automated",
+    "xdp_supercomputer",
+    "xdp_linkedhull",
+    "eccm"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -90,
+      "locations": [-10.5, -40.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-45.5, -46.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-57.5, -46.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -111.5,
+      "locations": [-89.5, -38.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-179.5, -11.5],
+      "length": 150,
+      "width": 50,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "SMOKY_RED_XVP"
+    },
+    {
+      "location": [-179.5, -11.5],
+      "length": 75,
+      "width": 50,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "SHIP_ORANGE_XVP"
+    }
+  ],
+  "bounds": [
+    -178.5, -47.5,
+    -87.5, -56.5,
+    -83, -62,
+    -31, -62,
+    -24.5, -66.5,
+    -3, -66,
+    9, -53.5,
+    21, -53,
+    35.5, -40.5,
+    35.5, -31,
+    30.5, -24,
+    30.5, -11,
+    27, -11.5,
+    27, -22,
+    33.5, -32,
+    33.5, -38,
+    21, -49.5,
+    0, -23,
+    -20.5, -22.5,
+    -167, -34
+  ]
+}

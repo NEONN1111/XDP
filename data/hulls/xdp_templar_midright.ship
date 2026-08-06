@@ -4,12 +4,12 @@
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/xdp_templar/xdp_templar_midleft.png",
   "style": "TEMPLAR",
-  "height": 191,
-  "width": 63,
-  "center": [59, 98],
-  "collisionRadius": 192.5,
-  "shieldCenter": [0, -0],
-  "shieldRadius": 193,
+  "height": 242,
+  "width": 118,
+  "center": [111, 125.5],
+  "collisionRadius": 142.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 143,
   "viewOffset": 0,
   "builtInMods": [
     "always_detaches",
@@ -18,7 +18,7 @@
     "automated",
     "xdp_supercomputer",
     "xdp_linkedhull",
-	"eccm"
+    "eccm"
   ],
   "weaponSlots": [
     {
@@ -28,7 +28,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 90,
-      "locations": [1, 38]
+      "locations": [-0.5, 59]
     },
     {
       "id": "WS0005",
@@ -37,7 +37,7 @@
       "mount": "TURRET",
       "arc": 120,
       "angle": 45,
-      "locations": [-68, 25]
+      "locations": [-80.5, 21]
     },
     {
       "id": "WS0002",
@@ -46,7 +46,7 @@
       "mount": "TURRET",
       "arc": 120,
       "angle": 90,
-      "locations": [-48, 31]
+      "locations": [-81.5, 54]
     },
     {
       "id": "WS0003",
@@ -55,7 +55,7 @@
       "mount": "TURRET",
       "arc": 120,
       "angle": 90,
-      "locations": [-32, 31]
+      "locations": [-67.5, 54]
     },
     {
       "id": "WS0004",
@@ -64,15 +64,66 @@
       "mount": "TURRET",
       "arc": 120,
       "angle": 90,
-      "locations": [-17, 31]
+      "locations": [-53.5, 54]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 90,
+      "locations": [-21.5, 19]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 62,
+      "locations": [42.5, 18]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 90,
+      "locations": [29.5, 57]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 53.5,
+      "locations": [44.5, 48]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -47.5, 4.5,
+        -47.5, 4.5
+      ]
     }
   ],
   "engineSlots": [],
   "bounds": [
-    -91, 33,
-    -69.5, 52.5,
-    82, 44.5,
-    76, 39.5,
-    -70, 43.5
+    -110.5, 37.5,
+    -78, 73,
+    41, 71.5,
+    110, 20.5,
+    106, 17,
+    39.5, 67,
+    -75.5, 70,
+    -108, 35.5
   ]
 }

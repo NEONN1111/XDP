@@ -1,6 +1,6 @@
 {
 	"id":"XDP", # internal id
-	"name":"Xxarra's Derelict Pack", # displayed to the player
+	"name":"Xxarra's Derelict Pack (XDP)", # displayed to the player
 	"author":"Xxarra",
 	"jars":["jars/XDP.jar"],
 	"version":"0.5",

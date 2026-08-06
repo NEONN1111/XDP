@@ -1,0 +1,31 @@
+{
+  "hullName": "<missing hull name>",
+  "hullId": "xdp_templar_prow_left",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/xdp_templar/xdp_templar_prow_left.png",
+  "style": "TEMPLAR",
+  "height": 275,
+  "width": 106,
+  "center": [67.5, 120],
+  "collisionRadius": 155.5,
+  "shieldCenter": [17.5, 14.5],
+  "shieldRadius": 138.5,
+  "viewOffset": 0,
+   "builtInMods": [
+     "always_detaches",
+    "missile_reload",
+    "reduced_explosion",
+    "automated",
+    "xdp_supercomputer",
+    "xdp_linkedhull",
+    "eccm"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    -96, 60,
+    153, -13.5,
+    109.5, -18.5,
+    -106, 54
+  ]
+}

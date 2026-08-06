@@ -48,11 +48,15 @@
     <orderEntry type="library" name="starfarer_obf" level="project" />
     <orderEntry type="library" name="LazyLib2" level="project" />
     <orderEntry type="library" name="LunaLib1" level="project" />
-    <orderEntry type="library" name="MagicLib1" level="project" />
     <orderEntry type="library" name="Graphics1" level="project" />
     <orderEntry type="library" name="lwjgl_util" level="project" />
     <orderEntry type="library" name="log4j-1.2.9" level="project" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
     <orderEntry type="library" name="json" level="project" />
+    <orderEntry type="library" name="LazyLib-Kotlin" level="project" />
+    <orderEntry type="library" name="lwjgl1" level="project" />
+    <orderEntry type="library" name="starfarer.api1" level="project" />
+    <orderEntry type="library" name="fs.common_obf" level="project" />
+    <orderEntry type="library" name="MagicLib1" level="project" />
   </component>
 </module>

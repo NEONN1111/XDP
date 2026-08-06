@@ -19,7 +19,8 @@
     "vastbulk",
     "shared_flux_sink",
     "stealth_minefield_lt",
-    "xdp_messengerambience"
+    "xdp_messengerambience",
+	"xdp_armorparent"
   ],
   "builtInWeapons": {
     "WS0001": "xdp_restored_sporeship_canistercannon",
