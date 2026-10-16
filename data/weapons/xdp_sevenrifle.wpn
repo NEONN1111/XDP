@@ -1,0 +1,46 @@
+{
+  "id": "xdp_sevenrifle",
+  "specClass": "projectile",
+  "projectileSpecId": "hveldriver_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/xdp_sevenrifle_turret.png",
+  "turretGunSprite": "graphics/weapons/xdp_sevenrifle_turret_recoil.png",
+  "hardpointSprite": "",
+  "visualRecoil": 10,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    54,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 54,
+    "spread": 20,
+    "particleSizeMin": 18,
+    "particleSizeRange": 24,
+    "particleDuration": 0.12,
+    "particleCount": 32,
+    "particleColor": [
+      255,
+      185,
+      115,
+      215
+    ]
+  },
+  "fireSoundTwo": "xdp_disablercarbinefire"
+}

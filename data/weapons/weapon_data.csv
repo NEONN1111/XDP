@@ -29,6 +29,10 @@ Rotor 1,xdp_perun_rotor1,,,,,,,,,10,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,4
 Rotor 2,xdp_perun_rotor2,,,,,,,,,-35,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,43
 Mjolnir arm (L),xdp_symbiant_left_arm,3,,15000,750,,300,,0,30,30,,,,ENERGY,180,,0.1,0.3,,,5,15,1,5,,2000,,,,,,"SYSTEM, DO_NOT_CONSERVE",energy19,,Domain Restricted,,General,,,,,,,%s: Requires the use of the ship-system to regenerate its charges.,Dedicated Charging Bus,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#CRENNELATION,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+777 Cover,xdp_object_777_cover,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,42.5
+Disabler Carbine,xdp_sevenrifle,1,,3500,1200,,300,,25,25,9999,30,1,,KINETIC,150,,0.1,0.5,3,0.08,0,6,1,5,,700,,,100,,,,"kinetic14, no_drop, no_drop_salvage, restricted",,,,Anti Shield,,,,,,,,,,7.4
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #SYMBIANT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Mjolnir arm (R),xdp_symbiant_right_arm,3,,15000,750,,300,,0,30,30,,,,ENERGY,180,,0.1,0.3,,,5,15,1,5,,2000,,,,,,"SYSTEM, DO_NOT_CONSERVE",energy19,,Domain Restricted,,General,,,,,,,%s: Requires the use of the ship-system to regenerate its charges.,Dedicated Charging Bus,,
 Domain's Gaze,xdp_symbiant_head,,,600,800,50,,,20,50,99,,,,ENERGY,,35,,,1,0.1,,,,,1000000,,,,,"PD,SYSTEM,ANTI_FTR,IGNORES_FLARES",,,,,Point Defense,,,,,,,,,,,,

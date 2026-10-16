@@ -1,0 +1,30 @@
+{
+	"id":"xdp_emp",
+	"type":"EMP",
+	"aiType":"EMP",
+        "statsScript":"neon.xdp.data.shipsystems.XDP_empStats",
+	
+	"range":1000,
+	
+	"empDamage":1200,
+	"damage":500,
+	"damageType":ENERGY,
+	
+	#"effectColor1":[150,150,255,200],
+	#"effectColor2":[175,175,255,255],
+	"effectColor1":[255,143,52,255],
+	"effectColor2":[255,143,52,255],
+
+
+	"useSound":"xdp_power_surge_start",
+	"loopSound":"xdp_power_surge_loop",
+	"impactSound":"xdp_lightning_ball_cast",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":800,
+		"threatAmount":6,
+		"threatAngle":0,
+		"threatArc":45,
+	}
+}

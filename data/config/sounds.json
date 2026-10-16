@@ -96,6 +96,28 @@
   [
     {"file":"sounds/xdp_heavypulse_fire_01.ogg","pitch":1,"volume":0.5},
   ],
+  "xdp_lightning_ball_cast":
+  [
+    {"file":"sounds/shipsystems/xdp_lightning_ball_cast.ogg","pitch":1,"volume":0.2},
+  ],
+  "xdp_power_surge_start":
+  [
+    {"file":"sounds/shipsystems/xdp_power_surge_start.ogg","pitch":1,"volume":0.5},
+  ],
+  "xdp_power_surge_loop":
+  [
+    {"file":"sounds/shipsystems/xdp_power_surge_loop.ogg","pitch":1,"volume":0.5},
+  ],
+   "xdp_disablercarbinefire":
+  [
+    {"file":"sounds/sfx_wpns_guns/disablercarbine_fire1.ogg","pitch":1,"volume":0.5},
+	{"file":"sounds/sfx_wpns_guns/disablercarbine_fire2.ogg","pitch":1,"volume":0.5},
+	{"file":"sounds/sfx_wpns_guns/disablercarbine_fire3.ogg","pitch":1,"volume":0.5},
+	{"file":"sounds/sfx_wpns_guns/disablercarbine_fire4.ogg","pitch":1,"volume":0.5},
+	{"file":"sounds/sfx_wpns_guns/disablercarbine_fire5.ogg","pitch":1,"volume":0.5},
+	{"file":"sounds/sfx_wpns_guns/disablercarbine_fire6.ogg","pitch":1,"volume":0.5},
+  ],
+
 
 
 

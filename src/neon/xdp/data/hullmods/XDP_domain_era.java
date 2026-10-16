@@ -36,9 +36,9 @@ public class XDP_domain_era extends BaseHullMod {
 	public static float DMOD_EFFECT_MULT = 0.3f;
 	public static float DMOD_AVOID_CHANCE = 35f;
 
-	public static float MISSILE_DAMAGE_REDUCTION = -50f;
+	// public static float MISSILE_DAMAGE_REDUCTION = -50f;
 
-	public static float MISSILE_ROF_BONUS = 5f;
+	// public static float MISSILE_ROF_BONUS = 5f;
 
 	public static float NON_SHIELD_FLUX_LEVEL = 50f;
 
@@ -91,10 +91,10 @@ public class XDP_domain_era extends BaseHullMod {
 
 		//stats.getVentRateMult().modifyPercent(id, VENT_RATE_BONUS);
 
-		stats.getMissileRoFMult().modifyMult(id, MISSILE_ROF_BONUS);
+		// stats.getMissileRoFMult().modifyMult(id, MISSILE_ROF_BONUS);
 
-		float MissileNerf = MISSILE_DAMAGE_REDUCTION;
-		stats.getMissileWeaponDamageMult().modifyPercent(id, MissileNerf);
+		// float MissileNerf = MISSILE_DAMAGE_REDUCTION;
+		// stats.getMissileWeaponDamageMult().modifyPercent(id, MissileNerf);
 
 		stats.getShieldTurnRateMult().modifyPercent(id, SHIELD_BONUS_TURN);
 		stats.getShieldUnfoldRateMult().modifyPercent(id, SHIELD_BONUS_UNFOLD);
@@ -183,14 +183,13 @@ public class XDP_domain_era extends BaseHullMod {
 		tooltip.addPara("Weapon costs are reduced by %s/%s/%s, in order of Large, Medium and Small, respectively.", 15f, Color.ORANGE, "4", "2", "1");
 
 
-		tooltip.addPara("Missile fire rate is increased %s, and missile damage is reduced by %s.", 15f, Color.ORANGE, "significantly", "50%");
-
-
 		tooltip.addPara("%s when this ship falls below %s of it's hull level, it will engage a temporay emergency repair protocol, briefly shunting the vessel into an alternate reality before emerging violently. Max speed, energy weapon damage, shield speed and raise rate are all augmented during this period. This system cannot activate if the vessel is %s.", 15f, Color.ORANGE, "Emergency Repair:", "33%", "overloaded");
 
 
 		tooltip.addPara("%s: Missiles weapons gain ammo regeneration equal to %s of their maximum ammo per minute.", 15f, Color.ORANGE, "Missile Forge", "10%");
 
+
+		// tooltip.addPara("Missile fire rate is increased %s, and missile damage is reduced by %s.", 15f, Color.ORANGE, "significantly", "50%");
 
 	}
 }
