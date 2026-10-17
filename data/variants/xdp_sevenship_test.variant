@@ -1,0 +1,26 @@
+{
+    "displayName": "Test",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "xdp_sevenship",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "xdp_sevenship_test",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "xdp_sevenrifle"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "xdp_sevenballgun"
+            }
+        }
+    ]
+}

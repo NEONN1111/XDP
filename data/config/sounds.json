@@ -117,6 +117,18 @@
 	{"file":"sounds/sfx_wpns_guns/disablercarbine_fire5.ogg","pitch":1,"volume":0.5},
 	{"file":"sounds/sfx_wpns_guns/disablercarbine_fire6.ogg","pitch":1,"volume":0.5},
   ],
+  "xdp_shockball_charge":
+  [
+	{"file":"sounds/sfx_wpns_guns/xdp_shockball_charge.ogg","pitch":1,"volume":0.5},
+  ],
+    "xdp_shockball_fire":
+  [
+    {"file":"sounds/shipsystems/xdp_lightning_ball_cast.ogg","pitch":1,"volume":0.5},
+  ],
+	"xdp_shockball_loop":
+  [
+	{"file":"sounds/sfx_wpns_guns/xdp_shockball_loop.ogg","pitch":1,"volume":0.2},
+  ],
 
 
 
