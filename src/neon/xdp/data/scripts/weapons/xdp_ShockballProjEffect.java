@@ -1,11 +1,13 @@
 package neon.xdp.data.scripts.weapons;
 
+import com.fs.starfarer.api.graphics.SpriteAPI;
 import neon.xdp.data.plugins.XDP_EnergyMissileEffectsPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.util.IntervalUtil;
 import com.fs.starfarer.api.util.Misc;
 import org.lwjgl.util.vector.Vector2f;
+import org.magiclib.util.MagicRender;
 
 import java.awt.*;
 import java.util.Iterator;
@@ -22,7 +24,9 @@ public class xdp_ShockballProjEffect extends XDP_EnergyMissileEffectsPlugin {
 
     public static float ARC_RATE_MULT = 2f;
 
-    public static int MAX_ARC_RANGE = 400;
+    public static int MAX_ARC_RANGE = 100;
+
+    private SpriteAPI EMP_Radius = Global.getSettings().getSprite("fx", "shield_ring");
 
     public static String PROJ_SFX = "xdp_shockball_loop";
 
@@ -41,7 +45,31 @@ public class xdp_ShockballProjEffect extends XDP_EnergyMissileEffectsPlugin {
         if (Global.getCombatEngine().isPaused()) return;
         super.advance(amount);
 
+        if (isWeaponCharging(weapon)) {
+
+            float ringSize = (MAX_ARC_RANGE * 2.0f) * weapon.getChargeLevel();
+
+            MagicRender.singleframe(EMP_Radius,
+                    weapon.getLocation(),
+                    new Vector2f(ringSize, ringSize),
+                    weapon.getCurrAngle() - 90f,
+                    Misc.scaleAlpha(FRINGE_COLOR, weapon.getChargeLevel()),
+                    true,
+                    CombatEngineLayers.ABOVE_SHIPS_LAYER);
+        }
+
         if (proj != null && !isProjectileExpired(proj) && !proj.isFading()) {
+
+            float ringSize = MAX_ARC_RANGE * 2.0f;
+
+            MagicRender.singleframe(EMP_Radius,
+                    proj.getLocation(),
+                    new Vector2f(ringSize, ringSize),
+                    proj.getFacing() - 90f,
+                    FRINGE_COLOR,
+                    true,
+                    CombatEngineLayers.ABOVE_SHIPS_LAYER);
+
             delay -= amount;
             if (delay <= 0) {
                 arcInterval.advance(amount * ARC_RATE_MULT);
