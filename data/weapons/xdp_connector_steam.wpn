@@ -17,5 +17,5 @@
 	"projectileSpecId":"xdp_steam",
 	"unaffectedByProjectileSpeedBonuses":true,
 	"noImpactSounds":true,
-	#"fireSoundOne":"xdp_steamer_release",
+	"fireSoundOne":"xdp_steamer_release",
 }
