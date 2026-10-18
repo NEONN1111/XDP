@@ -1,0 +1,21 @@
+{
+	"id":"xdp_connector_steam",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"DECORATIVE",
+	"size":"LARGE",
+	"everyFrameEffect":"neon.xdp.data.scripts.weapons.xdp_steamer",
+	"showDamageWhenDecorative":true,
+	"renderBelowAllWeapons":false,	
+	"turretSprite":"",
+	"hardpointSprite":"",	
+	"turretOffsets":[10, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[15, 0],
+	"hardpointAngleOffsets":[0],
+	"animationType":"GLOW",	
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"projectileSpecId":"xdp_steam",
+	"unaffectedByProjectileSpeedBonuses":true,
+	"noImpactSounds":true,
+	#"fireSoundOne":"xdp_steamer_release",
+}

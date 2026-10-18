@@ -24,7 +24,7 @@ public class xdp_ShockballProjEffect extends XDP_EnergyMissileEffectsPlugin {
 
     public static float ARC_RATE_MULT = 2f;
 
-    public static int MAX_ARC_RANGE = 100;
+    public static int MAX_ARC_RANGE = 150;
 
     private SpriteAPI EMP_Radius = Global.getSettings().getSprite("fx", "shield_ring");
 
