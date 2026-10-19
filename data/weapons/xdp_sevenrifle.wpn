@@ -1,9 +1,10 @@
 {
   "id": "xdp_sevenrifle",
   "specClass": "projectile",
-  "projectileSpecId": "hveldriver_shot",
+  "projectileSpecId": "xdp_tyrfing_shot",
   "type": "BALLISTIC",
   "size": "LARGE",
+  "everyFrameEffect": "neon.xdp.data.scripts.weapons.xdp_tyrfing_fireEffect",
   "turretSprite": "graphics/weapons/xdp_sevenrifle_turret.png",
   "turretGunSprite": "graphics/weapons/xdp_sevenrifle_turret_recoil.png",
   "hardpointSprite": "",
