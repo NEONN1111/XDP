@@ -1,8 +1,8 @@
 {
 	"id":"xdp_emp",
-	"type":"EMP",
+	"type":"STAT_MOD",
 	"aiType":"EMP",
-        "statsScript":"neon.xdp.data.shipsystems.XDP_empStats",
+    "statsScript":"neon.xdp.data.shipsystems.XDP_empStats",
 	
 	"range":1000,
 	
@@ -22,9 +22,9 @@
 	"outOfUsesSound":"gun_out_of_ammo",
 	
 	"aiHints":{
-		"threatRange":800,
+		"threatRange":1200,
 		"threatAmount":6,
 		"threatAngle":0,
-		"threatArc":45,
+		"threatArc":360,
 	}
 }
